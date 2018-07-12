@@ -10,11 +10,24 @@ xspeed = 8
 ellipseSize = 50
 
 def brick(topRight, topLeft, bWidth, bHeight):
-    
-
+    fill(255, 0, 255)
+    rect(topRight, topLeft, bWidth, bHeight)
+    rect(topRight + 50, topLeft, bWidth, bHeight)
+    rect(topRight + 100, topLeft, bWidth, bHeight)
+    rect(topRight + 150, topLeft, bWidth, bHeight)
+    rect(topRight + 200, topLeft, bWidth, bHeight)
+    rect(topRight + 250, topLeft, bWidth, bHeight)
+    rect(topRight + 300, topLeft, bWidth, bHeight) 
+    rect(topRight + 350, topLeft, bWidth, bHeight)
+    rect(topRight + 400, topLeft, bWidth, bHeight)
+    rect(topRight + 450, topLeft, bWidth, bHeight)
+    rect(topRight + 500, topLeft, bWidth, bHeight)
+    rect(topRight + 550, topLeft, bWidth, bHeight)
+    rect(topRight + 600, topLeft, bWidth, bHeight)
 def draw():
     k= random(23, 50)
     background(0)
+    brick(0, 0, 50, 60)
     global xCoordinate, yCoordinate, xspeed, yspeed, ellipseSize
     
     leftBoundary = ellipseSize / 2
@@ -33,3 +46,4 @@ def draw():
     ellipse(xCoordinate, yCoordinate, ellipseSize,ellipseSize)
     
     rect(mouseX, 375, 40, 20)
+    
