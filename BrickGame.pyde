@@ -27,7 +27,6 @@ def brick(topRight, topLeft, bWidth, bHeight):
 def draw():
     k= random(23, 50)
     background(0)
-    brick(0, 0, 50, 60)
     global xCoordinate, yCoordinate, xspeed, yspeed, ellipseSize
     
     leftBoundary = ellipseSize / 2
@@ -42,8 +41,11 @@ def draw():
         
     if yCoordinate >= bottomBoundary or yCoordinate <= topBoundary:
         yspeed = - yspeed
+   
+    
+   
     fill(57, 100, 130)
     ellipse(xCoordinate, yCoordinate, ellipseSize,ellipseSize)
     
     rect(mouseX, 375, 40, 20)
-    
+    brick(0, 0, 50, 60)
